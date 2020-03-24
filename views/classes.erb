@@ -1,0 +1,5 @@
+<h1>Classes:</h1>
+<% @cls.each do |cl| %>
+    <% @link = "/class/#{cl.id}" %>
+    <p><%= cl.name %> <a href="<%= @link %>">Show</a></p>
+<% end %>

@@ -1,0 +1,6 @@
+<p>Class name: <%= @cl.name%></p>
+<p>Class instructor: <%= @cl.instructor%></p>
+<p>Students enrolled:</p>
+<% @cl.students.each do |student| %>
+    <ul><li><%= student.name %></li></ul>
+<% end %>
